@@ -191,9 +191,7 @@ img {
 .nav_toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
-  width: 20%;
   cursor: pointer;
-  justify-content: center;
 }
 
 .nav_logo:hover{
@@ -884,7 +882,7 @@ img {
 .project_bg{
   background-color: var(--first-color-second);
   padding-top: 3rem;
-
+  padding-bottom: -100px;
 }
 
 .project_title{
@@ -904,10 +902,10 @@ img {
 }
 
 .project_img{
-  width: 243px;
+  width: 300px;
   height: -90px;
   justify-self: center;
-
+  
 }
 
 /*==================== TESTIMONIAL ====================*/
@@ -1393,11 +1391,11 @@ img {
 #scroll-up {
   position: fixed;
   transition: .5s;
-  bottom: 40px;
-  right: 40px;
+  bottom: 60px;
+  right: 10px;
   height: 50px;
   width: 50px;
-  display: none;
+  display: block;
   place-items: center;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -1416,11 +1414,4 @@ img {
   place-items: center;
   font-size: 35px;
   color: #001a2e;
-}
-
-.navlogo{
-  top: 10;
-  width: 8%;
-  left: 9%;
-  position: absolute;
 }

@@ -206,6 +206,7 @@ var typed = new Typed(".auto-typed", {
     loop: true
 })
 
+// Scroll Progress 
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("scroll-up");
     let progressValue = document.getElementById("progress-value");
