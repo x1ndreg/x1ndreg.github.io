@@ -148,8 +148,6 @@ img {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
-  margin-left: 20rem;
-  margin-right: 20rem;
 }
 
 .section_title, 
@@ -1306,9 +1304,6 @@ img {
   .portfolio_content{
     align-items: center;
   }
-  .project{
-    
-  }
   .project_bg{
     background: none;
   }
@@ -1428,10 +1423,4 @@ img {
   width: 8%;
   left: 9%;
   position: absolute;
-}
-.contact_description{
-  text-align: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  padding-bottom: 5rem;
 }
