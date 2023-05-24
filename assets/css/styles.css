@@ -546,7 +546,8 @@ img {
 }
 
 .skills_bar,
-.skills_percentage{
+.skills_percentage,
+.skills_html{
   height: 5px;
   border-radius:  .25rem;
 }
@@ -563,7 +564,7 @@ img {
 }
 
 .skills_html{
-  width: 90%;
+  width: 96%;
 }
 .skills_css{
   width: 60%;
@@ -572,13 +573,13 @@ img {
   width: 60%;
 }
 .skills_react{
-  width: 50%;
+  width: 30%;
 }
 .skills_php{
-  width: 80%;
+  width: 70%;
 }
 .skills_node{
-  width: 60%;
+  width: 30%;
 }
 .skills_firebase{
   width: 50%;
