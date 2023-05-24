@@ -200,7 +200,7 @@ themeButton.addEventListener('click', () => {
 })
 
 var typed = new Typed(".auto-typed", {
-    strings: ["Work", "Collabs", "Challenge", "Opportunity"],
+    strings: ["Works", "Collabs", "Challenges", "Opportunity's"],
     typeSpeed: 200,
     backSpeed: 150,
     loop: true
