@@ -18,6 +18,8 @@
     <!--==================== custom cursor ====================-->
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!--==================== Title and Title Icon ====================-->
     <link class="titleicon" rel="icon" type="image" href="/assets/img/gboi.jpg" />
     <title>Gendrix Rollon | Portfolio</title>
@@ -81,7 +83,6 @@
             </div>
         </nav>
     </header>
-
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
@@ -239,6 +240,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     <!--==================== SKILLS 2 ====================-->
                     <div class="skills_content skills_close">
                         <div class="skills_header">
@@ -294,9 +296,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div>
                     <!--==================== SKILLS 3 ====================-->
                     <div class="skills_content skills_close">
                         <div class="skills_header">
@@ -342,9 +341,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                     <!--==================== SKILLS 3 ====================-->
+                     <!--==================== SKILLS 4 ====================-->
                      <div class="skills_content skills_close">
                         <div class="skills_header">
                             <i class="uil uil-video skills_icon"></i>
@@ -589,7 +586,7 @@
                             <h4 class="services_modal-title">Video Editing</h4>
                             <i class="uil uil-times services_modal-close"></i>
 
-                            <ul class="services_modal-services girid">
+                            <ul class="services_modal-services grid">
                                 <li class="services_modal-service">
                                     <i class="uil uil-check-circle services_modal-icon"></i>
                                     <p>Professional editing for high-quality video enhancement.</p>
@@ -704,7 +701,7 @@
 
                         <div class="portfolio_data">
                             <h3 class="portfolio_title">Modern Website</h3>
-                            <p class="portforlio_description">
+                            <p class="portfolio_description">
                                 As a forward-thinking and modern web developer, I harness the power of cutting-edge technologies to craft dynamic and immersive websites. With a focus on user-centric design and seamless functionality.</p>
                             <br>
                             <a href="https://github.com/x1ndreg/x1ndreg.github.io" class="button button--flex button--small portfolio_button">
@@ -719,7 +716,7 @@
 
                         <div class="portfolio_data">
                             <h3 class="portfolio_title">App Development</h3>
-                            <p class="portforlio_description">
+                            <p class="portfolio_description">
                                 In my recent app development portfolio, I'm proud to present a series of advanced mobile applications that seamlessly combine elegant designs, flawless functionality, and easy-to-use interfaces.</p>
                                 <br>
                             <a href="https://nelarphy.github.io/#portfolio" class="button button--flex button--small portfolio_button">
@@ -734,7 +731,7 @@
 
                         <div class="portfolio_data">
                             <h3 class="portfolio_title">Video Editing</h3>
-                            <p class="portforlio_description">
+                            <p class="portfolio_description">
                                 Specializing in AMV editing and creating captivating advertisements for our school, I post them on my instagram proudly showcase my work from 2020 to 2023.</p>
                                 <br>
                             <a href="https://www.instagram.com/aph.x1ndreg/" class="button button--flex button--small portfolio_button">
@@ -839,6 +836,35 @@
                 </form>
             </div>
         </section>
+        <script>
+
+            ScrollReveal({ distance: '40px', duration: 2000, delay: 100 });
+            // Nav Bar
+            ScrollReveal().reveal('.nav_logo, .nav_item, .nav_btns',{delay : 100, interval: 1 });
+            // Home Title,Img,Subtitle,Button,scrollicon
+            ScrollReveal().reveal('.home_title, .home_data, .home_scroll, .home_subtitle,.button , .home_scroll',{ reset: true, delay : 200, interval: 100});
+            ScrollReveal().reveal('.home_img',{ reset: true, delay : 300});
+            // Home Social
+            ScrollReveal().reveal('.home_social-icon, .home_social',{ reset: true, delay : 100, origin: 'left', interval: 100 });
+            ScrollReveal().reveal('.social_title',{ reset: true, delay : 100, origin: 'right', });
+            // Section Title and subtitle
+            ScrollReveal().reveal('.section_title, .section_subtitle',{ reset: true, delay : 200 });
+            // About Me
+            ScrollReveal().reveal('.about_img, .about_data, .about_info, .about_info-name, .about_buttons',{ reset: true, delay : 100, interval: 100});
+            // Skills
+            ScrollReveal().reveal('.skills_content, .skills_titles',{ reset: true, delay : 100, interval: 100 });
+            ScrollReveal().reveal('.skills_name, .skills_number, .skills_bar, .skills_percentage',{ reset: true, origin: 'left',  delay : 100, interval: 100 });
+            // Qualification
+            ScrollReveal().reveal('.qualification_button, .qualification_title, .qualification_subtitle, .qualification_calendar',{ reset: true, delay : 100, interval: 100 });
+            ScrollReveal().reveal('.qualification_rounder',{ reset: true, origin: 'right', delay : 100, interval: 100 });
+            ScrollReveal().reveal('.qualification_line',{ reset: true, origin: 'left',delay : 100, interval: 100 });
+            // Services
+            ScrollReveal().reveal('.services_container, .services_content, .services_button, .services_icon, .services_title',{ reset: true, delay : 100, interval: 100 });
+            // Portfolio
+            ScrollReveal().reveal('.swiper-button-next, .swiper-button-prev, .swiper-pagination, .swiper-pagination-bullets, .portfolio_img, .portfolio_title, .portfolio_description, .porfolio_buttons',{ reset: true,delay : 100, interval: 100 });
+
+
+        </script>
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -889,7 +915,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+    <script defer src="assets/js/main.js"></script>
 
 </body>
 <script src="https://unpkg.com/kursor"></script>
