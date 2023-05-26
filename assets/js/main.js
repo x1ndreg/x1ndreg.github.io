@@ -228,4 +228,10 @@ let calcScrollValue = () => {
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
 
+ // reset back to top everytime user refresh
+  history.scrollRestoration = "manual";
+
+  $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+  });
 
