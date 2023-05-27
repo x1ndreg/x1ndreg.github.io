@@ -28,7 +28,7 @@
 
 <body>
     <div class="preloader">
-        <div class="bar"></div>
+        <div class="loader"></div>
         <div class="counter">0</div>
     </div>
     <!--==================== HEADER ====================-->
@@ -924,8 +924,12 @@
     <!--==================== MAIN JS ====================-->
     <script defer src="assets/js/main.js"></script>
 
+    <script src="./assets/js/preloader.js"></script>
+
 </body>
-<script src=" https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+            <!-- scrap this revise the code  -->
+<!-- <script src=" https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
 
@@ -936,7 +940,8 @@
         // $('.counter').text((++c).toString());
         if (count < 101) {
             $('.counter').text(count + '%');
-            count++
+            $('.bar').css('width', counter + '%');
+            count++;
         }
     },60)
     gsap.to('.preloader', 1, {
@@ -951,7 +956,10 @@
 
     counter()
     })
-</script>
+</script> -->
+
+            <!-- for the custom cursor the user sees -->
+
 <script src="https://unpkg.com/kursor"></script>
 <script>
     new kursor({
