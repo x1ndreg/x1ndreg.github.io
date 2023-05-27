@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let preloader = document.querySelector('.preloader');
     let count = 0;
     let counterFunction = setInterval(() => {
-        if (count < 100) {
+        if (count <= 100) {
             counter.textContent = `${count}%`;
             loader.style.width = `${count}$`;
             count++;
@@ -26,4 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })();
     }
-})
+});
